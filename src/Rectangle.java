@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle implements Shape{
     int width;
     int height;
     public Rectangle(int width, int height){
