@@ -52,4 +52,19 @@ public class RectangleTest {
         Assert.assertEquals(rectangle.getWidth(), 8);
     }
 
+    @Test
+    public void shouldComputeRectangleAreaAfterSetWidth() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        rectangle.setWidth(8);
+        Assert.assertEquals(rectangle.computeArea(), 16);
+    }
+
+    @Test
+    public void shouldComputeRectangleAreaAfterSetHeight() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        rectangle.setHeight(8);
+        Assert.assertEquals(rectangle.computeArea(), 24);
+    }
+
+
 }
