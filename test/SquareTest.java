@@ -40,6 +40,4 @@ public class SquareTest {
         square.setSize(10);
         Assert.assertEquals(square.computeArea(), 100);
     }
-
-
 }
