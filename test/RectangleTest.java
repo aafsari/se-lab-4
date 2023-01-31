@@ -35,7 +35,7 @@ public class RectangleTest {
     @Test
     public void shouldGetRectangleHeightByGetter() {
         Rectangle rectangle = new Rectangle(3, 2);
-        Assert.assertEquals(rectangle.getHeight(), 6);
+        Assert.assertEquals(rectangle.getHeight(), 2);
     }
 
     @Test
