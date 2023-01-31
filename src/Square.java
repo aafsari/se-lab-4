@@ -3,16 +3,18 @@ public class Square implements Shape {
     public int size;
 
     public Square(int size){
+        this.size = size;
     }
 
     public int getSize() {
-        return 0;
+        return size;
     }
 
     public void setSize(int size) {
+        this.size = size;
     }
 
     public int computeArea(){
-        return 0;
+        return size * size;
     }
 }
