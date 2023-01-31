@@ -25,4 +25,31 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(3, 2);
         Assert.assertEquals(rectangle.computeArea(), 6);
     }
+
+    @Test
+    public void shouldGetRectangleWidthByGetter() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        Assert.assertEquals(rectangle.getWidth(), 3);
+    }
+
+    @Test
+    public void shouldGetRectangleHeightByGetter() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        Assert.assertEquals(rectangle.getHeight(), 6);
+    }
+
+    @Test
+    public void shouldSetRectangleHeightBySetter() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        rectangle.setHeight(10);
+        Assert.assertEquals(rectangle.getHeight(), 10);
+    }
+
+    @Test
+    public void shouldSetRectangleWidthBySetter() {
+        Rectangle rectangle = new Rectangle(3, 2);
+        rectangle.setWidth(8);
+        Assert.assertEquals(rectangle.getWidth(), 8);
+    }
+
 }
